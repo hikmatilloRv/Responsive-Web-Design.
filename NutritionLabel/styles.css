@@ -8,13 +8,15 @@
   
   body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #2a3f3f;
   }
   
   .label {
-    border: 2px solid black;
-    width: 270px;
-    margin: 20px auto;
+    border: 2px solid rgb(186, 146, 146);
+    width: 290px;
+    margin: 50px auto;
     padding: 0 7px;
+    background-color: #b3d4d4;
   }
   
   header h1 {
@@ -96,7 +98,8 @@
   
   .note {
     font-size: 0.6rem;
-    margin: 5px 0;
+    margin: 5px 0 20px;
     padding: 0 8px;
     text-indent: -8px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
   }
