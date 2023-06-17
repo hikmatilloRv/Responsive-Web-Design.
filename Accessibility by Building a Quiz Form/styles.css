@@ -24,7 +24,7 @@
   
   #logo {
     width: max(100px, 18vw);
-    background-color: #0a0a23;
+    
     aspect-ratio: 35 / 4;
     padding: 0.4rem;
   }
@@ -85,7 +85,7 @@
   }
   
   h2 {
-    border-bottom: 4px solid #dfdfe2;
+    border-bottom: 4px solid #8a8aad;
     margin-top: 0px;
     padding-top: 60px;
   }
