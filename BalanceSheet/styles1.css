@@ -61,12 +61,24 @@ span[class~="sr-only"] {
     color: #fff;
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
     margin: 0 -2px;
+    transition: all 0.3s ease-in;
+  }
+
+  #years:hover {
+    color: #6298d5;
+    transform: scale(1.05);
   }
   
   #years span[class] {
     font-weight: bold;
     width: 4.5rem;
     text-align: right;
+  }
+
+  #years span[class]:hover {
+    border-right: 2px solid red;
+    cursor: pointer;
+    
   }
   
   .table-wrap {
