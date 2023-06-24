@@ -1,206 +1,227 @@
 span[class~="sr-only"] {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    clip-path: inset(50%) !important;
-    height: 1px !important;
-    width: 1px !important;
-    position: absolute !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    padding: 0 !important;
-    margin: -1px !important;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    color: #0a0a23;
-    background-image: linear-gradient(#212121, #dedede, #ff1233);
-  }
-  
-  h1 {
-    max-width: 37.25rem;
-    margin: 0 auto;
-    padding: 1.5rem 1.25rem;
-    background-color: #ffeb99;
-    box-sizing: content-box;
-    width: 100vh;
-  }
-  
-  h1 .flex {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-  }
-  
-  h1 .flex span:first-of-type {
-    font-size: 0.7em;
-  }
-  
-  h1 .flex span:last-of-type {
-    font-size: 1.2em;
-  }
-  
-  section {
-    max-width: 40rem;
-    margin: 0 auto 4rem auto;
-    border: 2px solid #d0d0d5;
-    background: #d0d0d5;
-  }
-  
-  #years {
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    background: #0a0a23;
-    color: #fff;
-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
-    margin: 0 -2px;
-    transition: all 0.3s ease-in;
-  }
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
+}
 
-  #years:hover {
-    color: #6298d5;
-    transform: scale(1.05);
-  }
-  
-  #years span[class] {
-    font-weight: bold;
-    width: 4.5rem;
-    text-align: right;
-  }
+html {
+  box-sizing: border-box;
+}
 
-  #years span[class]:hover {
-    border-right: 2px solid red;
-    cursor: pointer;
-    
-  }
-  
-  .table-wrap {
-    padding: 0 0.75rem 1.5rem 0.75rem;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border: 0;
-    width: 100%;
-    position: relative;
-    margin-top: 3rem;
-  }
-  
-  table caption {
-    width: 100%;
-    color: #356eaf;
-    font-size: 1.3em;
-    font-weight: normal;
-    position: absolute;
-    top: -2.25rem;
-    /* text-align: left; 
-    left: 0.5rem;
-    */
-   
-    transition: all 0.3s;
-  }
+body {
+  font-family: sans-serif;
+  color: #0a0a23;
+  background-image: linear-gradient(#212121, #dedede, #ff1233);
+}
 
-  table caption:hover {
-    transform: scale(1.03);
-    background-color: rgb(220, 186, 127);
-    border-top: 2px solid sandybrown;
-  }
-  
-  tbody td {
-    width: 100vw;
-    min-width: 4rem;
-    max-width: 4rem;
-  }
-  
-  tbody th {
-    width: calc(100% - 12rem);
-  }
+h1 {
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  background-color: #f7daa4f8;
+  box-sizing: content-box;
+  width: 100vh;
+}
 
-  #last {
-    transition: all 0.3s;
-    background-color: seagreen;
-  }
+h1 .flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
 
-  #last:hover {
-    transform: scale(1.05);
-    background-color: seagreen;
-  }
+h1 .flex span:first-of-type {
+  font-size: 0.7em;
+}
 
-  
-  tr[class="total"] {
-    border-bottom: 4px double #0a0a23;
-    font-weight: bold;
-  }
-  
-  tr[class="total"] th {
-    text-align: left;
-    padding: 0.5rem 0 0.25rem 0.5rem;
-  }
-  
-  tr.total td {
-    text-align: right;
-    padding: 0 0.25rem;
-    transition: all 0.3s;
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
+}
 
-  }
+section {
+  max-width: 40rem;
+  margin: 0 auto 4rem auto;
+  border: 2px solid #d0d0d5;
+  background: #d0d0d5;
+}
 
-  tr.total td:hover {
-    cursor: pointer;
-    color: red;
-    transform: scale(1.05);
-  }
-  
-  tr.total td:nth-of-type(3) {
-    padding-right: 0.5rem;
-  }
-  
-  tr.total:hover {
-    background-color: #99c9ff;
-  }
+#years {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: #0a0a23;
+  color: #fff;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  margin: 0 -2px;
+  transition: all 0.3s ease-in-out;
+}
 
-  tr.data:hover {
-    color: #356eaf;
-    background-image: linear-gradient(to bottom, #dea6d3 1.845rem, rgb(204, 160, 160) 1.845rem);
-    transform: scale(1.03);
-    cursor: pointer;
-  }
+#years:hover {
+  color: #6298d5;
+  transform: scale(1.05);
+}
+
+#years span[class] {
+  font-weight: bold;
+  width: 4.5rem;
+  text-align: right;
+}
+
+#years span[class]:hover {
+  border-right: 2px solid red;
+  cursor: pointer;
   
-  td.current {
-    font-style: italic;
-  }
-  
-  tr.data {
-    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
-    transition: all 0.3s;
-  }
-  
-  tr.data th {
-    text-align: left;
-    padding-top: 0.3rem;
-    padding-left: 0.5rem;
-  }
-  
-  tr.data th .description {
-    display: block;
-    font-weight: normal;
-    font-style: italic;
-    padding: 1rem 0 0.75rem;
-    margin-right: -13.5rem;
-  }
-  
-  tr.data td {
-    vertical-align: top;
-    padding: 0.3rem 0.25rem 0;
-    text-align: right;
-  }
-  
-  tr.data td:last-of-type {
-    padding-right: 0.5rem;
-  }
+}
+
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+table caption {
+  width: 100%;
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
+  position: absolute;
+  top: -2.25rem;
+  /* text-align: left; 
+  left: 0.5rem;
+  */
+ 
+  transition: all 0.3s;
+}
+
+table caption:hover {
+  transform: scale(1.03);
+  background-color: rgb(220, 186, 127);
+  border-top: 2px solid sandybrown;
+}
+
+tbody td {
+  width: 100vw;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+tr[class="total"] {
+  border-bottom: 4px double #323261;
+  font-weight: bold;
+}
+
+tr[class="total"] th {
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+  transition: all 0.3s;
+}
+
+tr[class='total'] th:hover {
+  color: #0d0d0d;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #5ce89b, #597ca2, #8e5ede);
+}
+
+tr.total td {
+  text-align: right;
+  padding: 0 0.25rem;
+  transition: all 0.3s;
+
+}
+
+tr.total td:hover {
+  cursor: pointer;
+  color: rgb(229, 228, 238);
+  transform: scale(1.05);
+  background-image: linear-gradient(45deg, #5ce89b, #597ca2, #8e5ede);
+}
+
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+tr.total {
+  transition: all 0.3s;
+}
+
+tr.total:hover {
+  background-color: #8e5ed0;
+  transform: scale(1.01);
+}
+
+tr.data:hover {
+  color: #356eaf;
+  background-image: linear-gradient(to bottom, #dea6d3 1.845rem, rgb(204, 160, 160) 1.845rem);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+td.current {
+  font-style: italic;
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+  transition: all 0.3s;
+}
+
+tr.data th {
+  text-align: left;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+tr.data th .description {
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  padding: 1rem 0 0.75rem;
+  margin-right: -13.5rem;
+}
+
+tr.data td {
+  vertical-align: top;
+  padding: 0.3rem 0.25rem 0;
+  text-align: right;
+}
+
+tr.data td:last-of-type {
+  padding-right: 0.5rem;
+}
+
+#last {
+  transition: all 0.3s;
+  background-image: linear-gradient(-35deg, #dea111, #afaf22);
+}
+
+#last tr.total:hover {
+  background-color: #8bce5c;
+}
+
+#last tr th:hover {
+  transform: scale(1.01);
+  background-image: linear-gradient(140deg, #96e85c, #597ca2);
+}
+
+#last tr td:hover {
+  background-image: linear-gradient(45deg, #e85c84, #21cd9c);
+}
+
