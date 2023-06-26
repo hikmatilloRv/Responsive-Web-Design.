@@ -50,16 +50,27 @@ html {
     top: 23px;
   }
 
-  .fas {
+  .fontawesome {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 20%;
     position: absolute;
-    left: 30px;
-    top:  70px;
-    color: aqua;
+    top: 60px;
+    left: 40px;
+    
   }
 
-  .fa-microphone {
-    left: 60px;
-    color: red;
+  .fas {
+    color: rgb(197, 194, 43);
+  }
+
+  .fa-battery-full {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 10px;
+    color: #d5cccc;
   }
   
   @media (max-width: 768px) {
