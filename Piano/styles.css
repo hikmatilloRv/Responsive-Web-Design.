@@ -5,6 +5,10 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+  body {
+    background-image: linear-gradient(to left, #b9b98f, #e46257, #11bb9f, #b9b98f, #e46257, #11bb9f);
+  }
   
   #piano {
     background-color: #00471b;
@@ -62,7 +66,7 @@ html {
   }
 
   .fas {
-    color: rgb(197, 194, 43);
+    color: rgb(221, 15, 60);
   }
 
   .fa-battery-full {
@@ -70,7 +74,7 @@ html {
     display: inline-block;
     right: 10px;
     top: 10px;
-    color: #d5cccc;
+    color: #d5d4cc;
   }
   
   @media (max-width: 768px) {
