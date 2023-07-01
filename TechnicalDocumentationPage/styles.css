@@ -17,6 +17,7 @@ body {
     height: 100%;
     border-right: solid;
     border-color: rgba(0, 22, 22, 0.4);
+    background-color: #8fb455;
   }
 
   header {
@@ -30,6 +31,10 @@ body {
   #main-doc header {
     text-align: left;
     margin: 0px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(9,121,82,1) 44%, rgba(0,212,255,1) 100%);
+    border-image-slice: 1;
+    width: max-content;
   }
 
   #navbar ul {
@@ -45,6 +50,14 @@ body {
     list-style: none;
     position: relative;
     width: 100%;
+    transition: all;
+  }
+
+  #navbar li:hover {
+    border-top: 1.2px solid transparent;
+    border-image: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(9,121,82,1) 44%, rgba(0,212,255,1) 100%);
+    border-image-slice: 1;
+    width: 100%;
   }
 
   #navbar a {
@@ -53,6 +66,12 @@ body {
     color: #4d4e53;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  #navbar a:hover {
+    color: white;
+    transform: translate(1rem, -1px);
   }
 
   #main-doc {
@@ -80,21 +99,30 @@ body {
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
-    background-color: #f7f7f7;
+    background-color: #bdb8b8;
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
   }
+
+  code:hover {
+    transform: scale(1.06);
+  }
   
   @media only screen and (max-width: 815px) {
     /* For mobile phones: */
+    #navbar a:hover {
+      color: #f80818;
+    }
+    
     #navbar ul {
+      position: relative;
       border: 1px solid;
       height: 207px;
     }
   
     #navbar {
-      background-color: white;
+      background-color: #f0e852;
       position: absolute;
       top: 0;
       padding: 0;
@@ -110,6 +138,10 @@ body {
       position: relative;
       margin-left: 0px;
       margin-top: 270px;
+    }
+
+    #main-doc header {
+      width: auto;
     }
   }
   
