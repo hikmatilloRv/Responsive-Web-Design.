@@ -2,10 +2,12 @@ html,
 body {
   min-width: 290px;
   color: #4d4e53;
-  background-color: #ffffff;
-  font-family: 'Open Sans', Arial, sans-serif;
+  /* background-color: #ffffff; */
+  background: rgb(249,248,246);
+  background: linear-gradient(95deg, rgba(249,248,246,0.9304971988795518) 0%, rgba(231,236,234,0.9613095238095238) 50%, rgba(222,215,198,0.8380602240896359) 100%);
   line-height: 1.5;
   scroll-behavior: smooth;
+
 }
 
 #navbar {
@@ -15,8 +17,9 @@ body {
     left: 0px;
     width: 300px;
     height: 100%;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
+    border-right: solid transparent;
+    border-image: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgb(150, 92, 5) 10%, rgb(255, 17, 0) 100%);
+    border-image-slice: 1;
     background-color: #8fb455;
   }
 
